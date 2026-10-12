@@ -1,0 +1,20 @@
+services:
+  contrato:
+    build: .
+    image: contrato-arrendamiento-maquinaria:1.0
+    container_name: contrato-arrendamiento-maquinaria
+    restart: unless-stopped
+    ports:
+      # Puerto del host : puerto del contenedor.
+      # Cambia el 8081 por el que prefieras (o por 80 si no tienes otro servicio ahi).
+      - "8081:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    labels:
+      # Si usas EasyPanel, suele gestionar sus propias redes; estas etiquetas
+      # solo son utiles si lo levantas con Traefik de forma manual.
+      - "com.centurylinklabs.watchtower.enable=false"

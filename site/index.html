@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Contrato de arrendamiento de maquinaria y vehículos de obra pública</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Modelo estándar de contrato de arrendamiento de maquinaria de obra pública sin operador y sin combustible, con condiciones particulares, régimen de responsabilidad por malas prácticas, abusos e impagos y anexos.">
+<style>
+:root{
+  --tinta:#16202b; --gris:#5b6b7c; --linea:#dde3ea; --acento:#1f4e79;
+  --acento2:#c8a24a; --fondo:#f6f8fa; --blanco:#ffffff;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--fondo); color:var(--tinta);
+  font-family:"Charter","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:16.5px; line-height:1.62;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px 80px}
+header.barra{
+  background:linear-gradient(135deg,#12314f 0%,#1f4e79 55%,#2a6ea6 100%);
+  color:#fff;padding:38px 0 32px;border-bottom:4px solid var(--acento2);
+}
+header.barra .wrap{padding-bottom:0}
+.kicker{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:.16em;font-size:11.5px;opacity:.85;margin:0 0 10px}
+h1.titulo{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:29px;line-height:1.2;margin:0 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:16px;opacity:.92;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.chips{margin:18px 0 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:13px}
+.chip{display:inline-block;border:1px solid rgba(255,255,255,.45);border-radius:999px;
+  padding:4px 12px;margin:0 8px 8px 0;background:rgba(255,255,255,.08)}
+.botones{
+  display:flex;flex-wrap:wrap;gap:12px;padding:22px 0 6px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  padding:12px 20px;border-radius:10px;font-size:15px;font-weight:600;
+  border:1px solid var(--linea);background:var(--blanco);color:var(--acento);
+  box-shadow:0 1px 2px rgba(16,32,48,.06);transition:transform .12s ease,box-shadow .12s ease;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(16,32,48,.12)}
+.btn.primario{background:var(--acento);border-color:var(--acento);color:#fff}
+.btn.oro{background:#fff;border-color:var(--acento2);color:#8a6b14}
+.doc{
+  background:var(--blanco);border:1px solid var(--linea);border-radius:14px;
+  padding:44px 52px;margin:20px 0 0;box-shadow:0 6px 26px rgba(16,32,48,.07);
+}
+.doc h1{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:23px;line-height:1.28;margin:44px 0 14px;padding-top:22px;
+  border-top:2px solid var(--linea);color:#12314f;letter-spacing:-.01em;
+}
+.doc > h1:first-child{margin-top:0;padding-top:0;border-top:none}
+.doc h2{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:18.5px;line-height:1.3;margin:34px 0 12px;color:#12314f;
+  border-left:4px solid var(--acento2);padding-left:12px;letter-spacing:-.005em;
+}
+.doc h3{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:16px;margin:26px 0 10px;color:#25455f;
+}
+.doc h4{font-size:15.5px;margin:20px 0 8px;color:#25455f}
+.doc p{margin:0 0 13px;text-align:justify;hyphens:auto}
+.doc strong{color:#0f2438}
+.doc ul,.doc ol{margin:0 0 14px;padding-left:22px}
+.doc li{margin:0 0 7px;text-align:justify}
+.doc table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:14px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.doc th,.doc td{border:1px solid var(--linea);padding:8px 10px;text-align:left;vertical-align:top}
+.doc th{background:#f0f4f8;font-weight:700;color:#12314f}
+.doc tr:nth-child(even) td{background:#fafcfe}
+.doc hr{border:none;border-top:1px solid var(--linea);margin:34px 0}
+.doc blockquote{margin:0 0 14px;padding:10px 16px;background:#f7f9fb;
+  border-left:4px solid var(--acento);color:#33475b}
+.doc em{color:var(--gris)}
+.aviso{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:13.5px;color:var(--gris);background:#fff;border:1px dashed var(--linea);
+  border-radius:10px;padding:14px 18px;margin:26px 0 0;
+}
+footer.pie{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:13px;color:var(--gris);text-align:center;padding:28px 12px 0;
+}
+footer.pie a{color:var(--acento)}
+.indice{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:14.5px;background:#fff;border:1px solid var(--linea);border-radius:12px;
+  padding:20px 24px;margin:20px 0 0;
+}
+.indice h2{margin:0 0 10px;font-size:15px;color:#12314f;border:none;padding:0}
+.indice ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
+@media (max-width:760px){.indice ol{columns:1}}
+@media (max-width:720px){
+  .doc{padding:26px 20px}
+  h1.titulo{font-size:23px}
+  body{font-size:16px}
+}
+@media print{
+  :root{--fondo:#fff}
+  body{background:#fff;font-size:11.5pt}
+  header.barra{background:#fff !important;color:#000;border-bottom:2px solid #000;padding:0 0 12px}
+  header.barra .kicker,header.barra .chips{display:none}
+  header.barra h1.titulo{font-size:17pt;color:#000}
+  header.barra .sub{font-size:11pt;color:#333}
+  .botones,.indice,footer.pie,.aviso{display:none !important}
+  .wrap{max-width:none;padding:0}
+  .doc{border:none;box-shadow:none;padding:0;margin:0}
+  .doc h1{page-break-before:always;border-top:none;padding-top:0}
+  .doc h1:first-child{page-break-before:avoid}
+  .doc h2,.doc h3{page-break-after:avoid}
+  .doc table,.doc li,.doc p{page-break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="wrap">
+    <p class="kicker">Modelo estándar &middot; condiciones generales y particulares</p>
+    <h1 class="titulo">Contrato de arrendamiento de maquinaria y vehículos de obra pública</h1>
+    <p class="sub">Modalidad sin operador y sin combustible &middot; máquina entregada en condiciones de trabajo</p>
+    <div class="chips"><span class="chip">Sin operador</span><span class="chip">Sin combustible</span><span class="chip">Máquina en condiciones de trabajo</span><span class="chip">21 estipulaciones + 4 anexos</span></div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="botones">
+    <a class="btn primario" href="contrato-arrendamiento-maquinaria-obras-publicas.pdf" download>&#8681;&nbsp; Descargar contrato en PDF</a>
+    <a class="btn" href="contrato-arrendamiento-maquinaria-obras-publicas-editable.docx" download>&#8681;&nbsp; Descargar versión editable (Word)</a>
+    <a class="btn oro" href="javascript:window.print()">&#128424;&nbsp; Imprimir</a>
+    <a class="btn" href="responsabilidades.html">&#9878;&nbsp; Régimen de responsabilidad e impagos</a>
+  </div>
+  <nav class="indice">
+  <h2>Contenido del contrato</h2>
+  <ol><li><a href="#reunidos">REUNIDOS</a></li><li><a href="#exponen">EXPONEN</a></li><li><a href="#primera-objeto-del-contrato">PRIMERA. OBJETO DEL CONTRATO</a></li><li><a href="#segunda-naturaleza-del-arrendamiento-sin-operador">SEGUNDA. NATURALEZA DEL ARRENDAMIENTO SIN OPERADOR</a></li><li><a href="#tercera-entrega-acta-de-entrega-y-verificacion-del-estado">TERCERA. ENTREGA, ACTA DE ENTREGA Y VERIFICACIÓN DEL ESTADO</a></li><li><a href="#cuarta-duracion-prorroga-y-finalizacion">CUARTA. DURACIÓN, PRÓRROGA Y FINALIZACIÓN</a></li><li><a href="#quinta-precio-bases-de-facturacion-horometro-y-gastos">QUINTA. PRECIO, BASES DE FACTURACIÓN, HORÓMETRO Y GASTOS</a></li><li><a href="#sexta-forma-de-pago-garantia-e-impagos">SEXTA. FORMA DE PAGO, GARANTÍA E IMPAGOS</a></li><li><a href="#septima-practicas-indebidas-malas-practicas-y-abuso-de-la-maquinaria">SÉPTIMA. PRÁCTICAS INDEBIDAS, MALAS PRÁCTICAS Y ABUSO DE LA MAQUINARIA</a></li><li><a href="#octava-obligaciones-del-arrendador">OCTAVA. OBLIGACIONES DEL ARRENDADOR</a></li><li><a href="#novena-obligaciones-del-arrendatario">NOVENA. OBLIGACIONES DEL ARRENDATARIO</a></li><li><a href="#decima-averias-reparaciones-y-asistencia-tecnica">DÉCIMA. AVERÍAS, REPARACIONES Y ASISTENCIA TÉCNICA</a></li><li><a href="#undecima-responsabilidad-por-danos-perdida-robo-y-hurto">UNDÉCIMA. RESPONSABILIDAD POR DAÑOS, PÉRDIDA, ROBO Y HURTO</a></li><li><a href="#decimotercera-cumplimiento-normativo-prevencion-de-riesgos-laborales-y-coordinacion-de-actividades">DECIMOTERCERA. CUMPLIMIENTO NORMATIVO, PREVENCIÓN DE RIESGOS LABORALES Y COORDINACIÓN DE ACTIVIDADES</a></li><li><a href="#decimocuarta-cesion-subarriendo-traslado-y-titularidad">DECIMOCUARTA. CESIÓN, SUBARRIENDO, TRASLADO Y TITULARIDAD</a></li><li><a href="#decimoquinta-inspeccion-control-y-custodia">DECIMOQUINTA. INSPECCIÓN, CONTROL Y CUSTODIA</a></li><li><a href="#decimosexta-fuerza-mayor">DECIMOSEXTA. FUERZA MAYOR</a></li><li><a href="#decimoseptima-resolucion-efectos-y-clausula-penal">DECIMOSÉPTIMA. RESOLUCIÓN, EFECTOS Y CLÁUSULA PENAL</a></li><li><a href="#decimoctava-confidencialidad-y-proteccion-de-datos">DECIMOCTAVA. CONFIDENCIALIDAD Y PROTECCIÓN DE DATOS</a></li><li><a href="#decimonovena-notificaciones">DECIMONOVENA. NOTIFICACIONES</a></li><li><a href="#vigesima-integridad-modificacion-y-nulidad-parcial">VIGÉSIMA. INTEGRIDAD, MODIFICACIÓN Y NULIDAD PARCIAL</a></li><li><a href="#vigesimoprimera-ley-aplicable-y-jurisdiccion">VIGESIMOPRIMERA. LEY APLICABLE Y JURISDICCIÓN</a></li><li><a href="#a-acta-de-entrega">A) ACTA DE ENTREGA</a></li><li><a href="#b-acta-de-devolucion">B) ACTA DE DEVOLUCIÓN</a></li></ol>
+</nav>
+  <article class="doc">
+<h1 id="contrato-de-arrendamiento-de-maquinaria-y-vehiculos-de-obra-publica">CONTRATO DE ARRENDAMIENTO DE MAQUINARIA Y VEHÍCULOS DE OBRA PÚBLICA</h1>
+<h3>Modalidad: sin operador y sin combustible — máquina entregada en condiciones de trabajo</h3>
+<p><strong>Modelo estándar con condiciones generales, condiciones particulares y anexos</strong></p>
+<p>Nº de contrato: <strong><strong><em>_</em></strong>___</strong></p>
+<hr />
+<p>En <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_, a <strong><em>_ de </em></strong><strong><em>_</em></strong><strong><em>_</em>_ de 20</strong>__</p>
+<h2 id="reunidos">REUNIDOS</h2>
+<p><strong>DE UNA PARTE — EL ARRENDADOR</strong></p>
+<p>D./Dña. <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, mayor de edad, con DNI/NIE nº </em></strong><strong><em>_</em></strong>__, en nombre y representación de la mercantil <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, S.L. (en lo sucesivo, <strong>«el ARRENDADOR»</strong>), con CIF nº </em></strong><strong><em>_</em></strong>__ y domicilio social en <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, teléfono </em></strong><strong><em>_</em></strong>__, correo electrónico <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_.</p>
+<p>Actúa en su condición de administrador/representante legal de la sociedad, con facultades suficientes según escritura de poder o nombramiento de fecha <strong><em>_/</em></strong>_/20____, que declara vigente.</p>
+<p><strong>DE OTRA PARTE — EL ARRENDATARIO</strong></p>
+<p>D./Dña. <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, mayor de edad, con DNI/NIE nº </em></strong><strong><em>_</em></strong>__, en nombre y representación de la mercantil <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, S.L. / S.A. / sociedad limitada nueva empresa / trabajador autónomo ( <strong>«el ARRENDATARIO»</strong> ), con CIF nº </em></strong><strong><em>_</em></strong>__ y domicilio social en <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>, teléfono </em></strong><strong><em>_</em></strong>__, correo electrónico <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_.</p>
+<p>Actúa con facultades suficientes según <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>___.</p>
+<p>Ambas partes se reconocen mutuamente la capacidad legal necesaria para contratar y obligarse, y con tal carácter, libremente y de buena fe,</p>
+<h2 id="exponen">EXPONEN</h2>
+<p><strong>I.</strong> Que el ARRENDADOR es propietario de la maquinaria, equipos y vehículos industriales que se relacionan en el <strong>Anexo I</strong>, destinados a trabajos de obra pública, construcción, movimiento de tierras, demolición y actividades análogas, y tiene plena disponibilidad y capacidad de disposición sobre ellos.</p>
+<p><strong>II.</strong> Que el ARRENDATARIO está interesado en tomar en arrendamiento dicha maquinaria para su uso en la obra o trabajos indicados en el <strong>Anexo II</strong>, en la modalidad de alquiler <strong>sin operador y sin combustible</strong>, es decir, sin suministro de personal de conducción o manejo y sin suministro de carburante ni lubricantes.</p>
+<p><strong>III.</strong> Que es voluntad de ambas partes documentar de forma expresa, clara e inequívoca las condiciones generales y particulares del arrendamiento, así como el régimen de responsabilidades de cada parte desde la entrega hasta la devolución de los equipos, y en particular las consecuencias del uso indebido, de las prácticas abusivas y del impago.</p>
+<p>Y en su virtud, ambas partes convienen y formalizan el presente contrato conforme a las siguientes</p>
+<hr />
+<h1 id="estipulaciones">ESTIPULACIONES</h1>
+<h2 id="primera-objeto-del-contrato">PRIMERA. OBJETO DEL CONTRATO</h2>
+<p><strong>1.1.</strong> El ARRENDADOR cede al ARRENDATARIO, en concepto de arrendamiento de cosa (artículos 1542 y siguientes del Código Civil), el uso y disfrute de la maquinaria, equipos y vehículos industriales relacionados en el <strong>Anexo I</strong>, con sus accesorios, herramientas y documentación técnica, para su utilización exclusivamente en la obra, ubicación y trabajos indicados en el <strong>Anexo II</strong>.</p>
+<p><strong>1.2.</strong> El arrendamiento se pacta con las siguientes características esenciales, que forman parte del objeto del contrato:</p>
+<ul>
+<li><strong>a) Sin operador.</strong> El ARRENDADOR no aporta ni aportará personal alguno para la conducción, manejo, gobierno o asistencia continuada de la maquinaria. La máquina se entrega sin conductor ni maquinista.</li>
+<li><strong>b) Sin combustible.</strong> El ARRENDADOR no suministra carburante, lubricantes, AdBlue, anticongelante ni cualquier otro fluido o consumible. El aprovisionamiento y su coste son íntegramente por cuenta del ARRENDATARIO, sin que proceda repercusión, ajuste o compensación alguna en el precio del arrendamiento por este concepto.</li>
+<li><strong>c) Máquina entregada en condiciones de trabajo.</strong> El ARRENDADOR se obliga a poner a disposición del ARRENDATARIO la maquinaria <strong>revisada, en perfecto estado de funcionamiento, conservación y seguridad</strong>, apta para el uso convenido, con sus niveles, engrases y elementos de desgaste en estado de servicio, y con la documentación técnica y legal exigible (apartado 3.3).</li>
+</ul>
+<p><strong>1.3.</strong> El presente contrato <strong>no tiene por objeto</strong> la ejecución de obra determinada, la prestación de un servicio con medios personales del ARRENDADOR ni la puesta a disposición de trabajadores. Se trata de un arrendamiento de cosa en el que la dirección, organización y control efectivo del uso de la maquinaria corresponden en exclusiva al ARRENDATARIO.</p>
+<p><strong>1.4.</strong> Salvo pacto expreso en el <strong>Anexo II</strong>, el arrendamiento <strong>no incluye</strong> transporte, carga y descarga, seguros, gestión de residuos, ni suministro de consumibles, cuya contratación y coste corresponden al ARRENDATARIO conforme a la estipulación QUINTA.</p>
+<h2 id="segunda-naturaleza-del-arrendamiento-sin-operador">SEGUNDA. NATURALEZA DEL ARRENDAMIENTO SIN OPERADOR</h2>
+<p><strong>2.1.</strong> Al arrendarse la maquinaria sin operador, el ARRENDATARIO es el único responsable de que su utilización se realice por personal cualificado, mayor de edad, debidamente formado y en posesión de los permisos, licencias, habilitaciones y autorizaciones administrativas que resulten exigibles para el manejo de cada equipo (por ejemplo, permiso de conducción de la clase correspondiente, tarjeta de cualificación profesional o certificado de formación específica cuando resulte preceptivo).</p>
+<p><strong>2.2.</strong> En particular, corresponde al ARRENDATARIO designar formalmente y por escrito a las personas autorizadas para el uso de cada equipo, acreditar su formación específica y su estado de salud, y entregarles las instrucciones del fabricante y las medidas de protección necesarias (artículo 3 y anexo II del Real Decreto 1215/1997, de 18 de julio, por el que se establecen las disposiciones mínimas de seguridad y salud para la utilización por los trabajadores de los equipos de trabajo).</p>
+<p><strong>2.3.</strong> El ARRENDATARIO asume, respecto de las personas que utilicen la maquinaria arrendada, la totalidad de sus obligaciones como empresario empleador y, en su caso, como empresario contratista o subcontratista, incluidas las de prevención de riesgos laborales, seguridad social, salarios, jornada y descanso. En ningún caso existirá relación laboral entre el ARRENDADOR y el personal del ARRENDATARIO.</p>
+<p><strong>2.4.</strong> El ARRENDATARIO declara conocer y aceptar que, al manejar la maquinaria su propio personal, asume de forma plena la custodia jurídica y material de los equipos y responde de todos los daños y perjuicios causados al propio equipo y a terceros derivados del manejo, la conducción o el uso, así como de las infracciones administrativas en que se incurra.</p>
+<p><strong>2.5.</strong> Cuando el ARRENDATARIO sea un trabajador autónomo que maneje personalmente la máquina, declara expresamente: (i) su condición de trabajador autónomo conforme a la Ley 20/2007, de 11 de julio; (ii) estar al corriente de sus obligaciones fiscales y de Seguridad Social; (iii) haber recibido las instrucciones de uso y seguridad del equipo; y (iv) asumir personalmente la responsabilidad del manejo y de las consecuencias derivadas del mismo.</p>
+<h2 id="tercera-entrega-acta-de-entrega-y-verificacion-del-estado">TERCERA. ENTREGA, ACTA DE ENTREGA Y VERIFICACIÓN DEL ESTADO</h2>
+<p><strong>3.1.</strong> La entrega se formalizará mediante <strong>acta de entrega</strong> (Anexo III), por duplicado y firmada por ambas partes, en la que se identificarán la máquina (marca, modelo, número de serie, matrícula en su caso), sus accesorios, la lectura del horómetro o cuentakilómetros, el estado aparente, el nivel de combustible y los elementos de desgaste.</p>
+<p><strong>3.2.</strong> La firma del acta de entrega por el ARRENDATARIO, por una persona por él designada o por el transportista que él contrate, acredita la <strong>recepción conforme</strong> de la maquinaria en condiciones de trabajo, salvo <strong>protesta escrita formulada en el propio acto</strong> de la entrega. Transcurridas 24 horas desde la entrega sin protesta escrita, se entenderá que la máquina ha sido recibida en perfectas condiciones de uso.</p>
+<p><strong>3.3.</strong> Junto con la maquinaria, y cuando resulte exigible, el ARRENDADOR entregará o pondrá a disposición del ARRENDATARIO copia de la siguiente documentación:</p>
+<ul>
+<li>Ficha técnica o permiso de circulación, en el caso de máquinas o vehículos matriculados.</li>
+<li>Inspección Técnica de Vehículos (ITV) en vigor, cuando proceda.</li>
+<li>Certificado de seguro obligatorio de circulación en vigor, para máquinas y vehículos matriculados.</li>
+<li>Declaración CE de conformidad y marcado CE de la máquina (Real Decreto 1644/2008, de 10 de octubre).</li>
+<li>Manual de instrucciones del fabricante en castellano.</li>
+<li>Libro o registro de mantenimiento y de las revisiones periódicas legalmente exigibles.</li>
+<li>Protocolo de puesta en marcha, según el tipo de equipo.</li>
+</ul>
+<p>La falta de alguno de estos documentos por causa imputable al ARRENDADOR dará derecho al ARRENDATARIO a exigir su entrega sin que ello le exima del resto de obligaciones contractuales.</p>
+<p><strong>3.4.</strong> La toma de posesión traslada al ARRENDATARIO la <strong>custodia y la posesión</strong> de la maquinaria desde el momento de la entrega y hasta su devolución efectiva, asumiendo desde ese instante las obligaciones de conservación y uso diligente (artículos 1554, 1555 y 1563 del Código Civil).</p>
+<p><strong>3.5.</strong> <strong>Combustible.</strong> La máquina se entrega sin combustible o con el nivel que se haga constar en el Anexo III, corriendo el sucinto del mismo por cuenta del ARRENDATARIO desde ese momento. Queda expresamente prohibido el empleo de carburantes bonificados o de uso restringido (entre ellos el gasóleo bonificado y el gasóleo profesional sin derecho a su aplicación), respondiendo el ARRENDATARIO de cualquier sanción, recargo, regularización o responsabilidad derivada del uso indebido de carburantes (Ley 38/1992, de 28 de diciembre, de Impuestos Especiales).</p>
+<p><strong>3.6.</strong> Si el ARRENDATARIO no estuviera presente en el lugar y momento de entrega acordados, los gastos de desplazamiento, espera, transporte y devolución serán de su cuenta.</p>
+<h2 id="cuarta-duracion-prorroga-y-finalizacion">CUARTA. DURACIÓN, PRÓRROGA Y FINALIZACIÓN</h2>
+<p><strong>4.1.</strong> El arrendamiento se inicia el <strong><em>_ de </em></strong><strong><em>_</em></strong><strong><em>_</em>_ de 20</strong>__ (o, alternativamente, en el momento de la puesta a disposición de la maquinaria) y finaliza el <strong><em>_ de </em></strong><strong><em>_</em></strong><strong><em>_</em>_ de 20</strong>__, sin perjuicio de lo previsto para la prórroga.</p>
+<p><strong>4.2.</strong> Llegada la fecha de vencimiento, el contrato se prorrogará automáticamente por períodos sucesivos de <strong><em>_</em></strong>_____ (día, semana, mes) al mismo precio, salvo que cualquiera de las partes lo denuncie con un preaviso mínimo de <strong>siete (7) días naturales</strong> por escrito. Si el ARRENDATARIO no respetara el preaviso, el ARRENDADOR podrá facturar como indemnización el importe de los días de preaviso incumplidos.</p>
+<p><strong>4.3.</strong> El ARRENDATARIO está obligado a comunicar fehacientemente la fecha de devolución con la antelación pactada. No se admitirá, como notificación de devolución, la simple retirada de la máquina de su emplazamiento sin la conformidad del ARRENDADOR.</p>
+<p><strong>4.4.</strong> El arrendamiento se computa por el tiempo durante el cual la maquinaria permanezca a disposición del ARRENDATARIO, con independencia de que se trabaje o no con ella (cláusula QUINTA). La paralización total o parcial de la obra por causas ajenas al ARRENDADOR —entre ellas las condiciones meteorológicas, la falta de permisos, la paralización administrativa o judicial, la inactividad de la mano de obra o del suministro— <strong>no interrumpe el devengo del precio</strong> ni suspende las obligaciones del ARRENDATARIO.</p>
+<p><strong>4.5.</strong> Finalizado el contrato, el ARRENDATARIO deberá devolver la maquinaria en el lugar y forma pactados en el Anexo II, con sus accesorios y documentación, en el estado propio del uso normal y limpia. La devolución se documentará mediante <strong>acta de devolución</strong> (Anexo III), momento desde el cual se entiende finalizado el arrendamiento a los efectos de facturación.</p>
+<p><strong>4.6.</strong> La permanencia de la maquinaria en poder del ARRENDATARIO una vez vencido el contrato sin haberse formalizado su devolución devengará el precio pactado incrementado en un <strong>recargo del 25 %</strong>, en concepto de indemnización por la indisponibilidad del equipo y sin perjuicio de la cláusula penal de la estipulación DECIMOSÉPTIMA.</p>
+<h2 id="quinta-precio-bases-de-facturacion-horometro-y-gastos">QUINTA. PRECIO, BASES DE FACTURACIÓN, HORÓMETRO Y GASTOS</h2>
+<p><strong>5.1.</strong> El precio del arrendamiento es el que figura en las <strong>condiciones particulares (Anexo II)</strong>, referido a la unidad de tiempo contratada (día, semana, mes, jornada u horas). A dicho precio se le añadirán, cuando proceda, los importes por transporte, seguros, gestión de residuos, consumibles, daños y cualesquiera otros pactados.</p>
+<p><strong>5.2.</strong> <strong>Jornada y horas de trabajo.</strong> El precio comprende la utilización de la máquina durante una jornada de <strong>ocho (8) horas</strong> por día laborable, de lunes a viernes, salvo que en el Anexo II se pacte otro régimen. No se facturan sábados, domingos ni festivos, salvo que la máquina trabaje en esos días, en cuyo caso se facturarán en proporción a las horas efectivamente realizadas. El exceso de horas se facturará en proporción al precio de la unidad de tiempo contratada. El defecto de horas no dará derecho a descuento alguno.</p>
+<p><strong>5.3.</strong> <strong>Horómetro.</strong> Cuando el equipo disponga de horómetro, contador de horas o cuentakilómetros, su lectura se hará constar en las actas de entrega y devolución y en los partes periódicos, y <strong>ambas partes lo aceptan como prueba</strong> para la facturación de las horas realizadas. En defecto de lectura final por causa imputable al ARRENDATARIO, se facturarán las horas resultantes de la media diaria de uso acreditada hasta ese momento. El ARRENDATARIO autoriza al ARRENDADOR para acceder al horómetro y a los sistemas de telemetría o registro del equipo en cualquier momento.</p>
+<p><strong>5.4.</strong> <strong>Inmovilizaciones.</strong> No se facturará el tiempo en que la máquina permanezca inmovilizada por avería mecánica o eléctrica no imputable al ARRENDATARIO, desde el aviso fehaciente de la avería y hasta la puesta de nuevo en servicio o su sustitución. Sí se facturará el tiempo de inmovilización derivado de avería imputable al ARRENDATARIO, de falta de mantenimiento, de falta de combustible o consumibles, de accidentes, de falta de permisos o de cualquier causa a él imputable.</p>
+<p><strong>5.5.</strong> <strong>Impuestos.</strong> Los precios no incluyen el Impuesto sobre el Valor Añadido (IVA), que se repercutirá al tipo vigente (Ley 37/1992, de 28 de diciembre). Cualquier otro tributo, tasa, recargo o prestación relacionada con el arrendamiento o con el uso de la maquinaria será por cuenta del ARRENDATARIO. Las partes se obligan a emitir y aceptar facturas electrónicas conforme a la normativa vigente de facturación entre empresas.</p>
+<p><strong>5.6.</strong> <strong>Gastos a cargo del ARRENDATARIO.</strong> Serán por cuenta del ARRENDATARIO, además del combustible y los lubricantes: el transporte, carga y descarga de la maquinaria (salvo pacto en contrario), el seguro del transporte, los neumáticos, cadenas, cuchillas y elementos de contacto con el suelo, los consumibles y piezas de desgaste de reposición por uso anormal, la limpieza, las reparaciones por mal uso, el combustible y el arranque por falta de suministro, la asistencia en carretera, los gastos de grúa, desbloqueo o rescate, la gestión de residuos y aceites usados, los gastos de guarda y custodia y las sanciones y multas derivadas del uso.</p>
+<p><strong>5.7.</strong> <strong>Revisión de precios.</strong> Sin perjuicio de lo pactado en el Anexo II, en los arrendamientos de duración superior a un año el precio se revisará anualmente conforme a la variación del Índice de Precios al Consumo (IPC) publicado por el Instituto Nacional de Estadística, u otro índice que lo sustituya, salvo que las partes acuerden otro mecanismo.</p>
+<p><strong>5.8.</strong> <strong>Facturación.</strong> La facturación se realizará con periodicidad mensual o al finalizar el arrendamiento, según se pacte. Las facturas se remitirán a la dirección de correo electrónico designada por el ARRENDATARIO en la estipulación DECIMONOVENA, produciendo dicho envío los efectos de notificación y de inicio del cómputo del plazo de pago conforme al artículo 4 de la Ley 3/2004, de 29 de diciembre.</p>
+<h2 id="sexta-forma-de-pago-garantia-e-impagos">SEXTA. FORMA DE PAGO, GARANTÍA E IMPAGOS</h2>
+<p><strong>6.1. Forma de pago.</strong> El pago se realizará mediante transferencia bancaria a la cuenta que designe el ARRENDADOR, dentro del plazo pactado en el Anexo II y, en su defecto, en el plazo de <strong>treinta (30) días naturales</strong> contados desde la fecha de la factura, plazo que en ningún caso excederá el máximo legalmente permitido (artículo 4 de la Ley 3/2004). Las comisiones bancarias y los gastos de transferencia serán de cuenta del ARRENDATARIO.</p>
+<p><strong>6.2. Retenciones y compensaciones.</strong> El ARRENDATARIO no podrá retener, descontar, compensar ni minorar cantidad alguna del precio por causas no reconocidas por escrito por el ARRENDADOR. Toda reclamación relativa a una factura deberá formularse por escrito dentro de los siete (7) días naturales siguientes a su recepción, entendiéndose en caso contrario aceptada; la reclamación de una factura no suspende el deber de pago de las restantes.</p>
+<p><strong>6.3. Fianza o garantía.</strong> El ARRENDATARIO constituye en este acto, en concepto de fianza o garantía del cumplimiento de sus obligaciones: [ ] efectivo metálico [ ] transferencia a la cuenta del ARRENDADOR [ ] aval bancario [ ] línea de crédito o póliza de caución, por importe de <strong><strong><em>_</em></strong><strong><em>_</em></strong> euros</strong> (o el que resulte del Anexo II).</p>
+<p>La fianza responderá de: (i) las rentas devengadas e impagadas; (ii) los daños, deterioros y pérdidas de la maquinaria; (iii) los gastos de limpieza, reparación, transporte y retirada; (iv) los intereses de demora y costes de cobro; y (v) las penalizaciones pactadas. El ARRENDADOR podrá aplicar la fianza a estas obligaciones previa liquidación, quedando obligado el ARRENDATARIO a reponerla íntegramente en el plazo de diez (10) días. La fianza se devolverá, sin devengo de intereses, una vez comprobado el estado de la maquinaria, liquidado el arrendamiento y abonadas todas las cantidades adeudadas.</p>
+<p><strong>6.4. Mora automática e intereses de demora.</strong> El ARRENDATARIO incurrirá en mora por el mero incumplimiento del pago en el plazo pactado, <strong>sin necesidad de aviso de vencimiento ni intimación previa</strong> (artículo 5 de la Ley 3/2004). Desde ese momento y sin requerimiento previo se devengarán automáticamente, día a día, intereses de demora sobre la cantidad impagada, al tipo pactado en el Anexo II y, en su defecto, al <strong>mayor</strong> de los siguientes: (i) el tipo legal de interés de demora previsto en el artículo 7.2 de la Ley 3/2004 (tipo de interés aplicado por el Banco Central Europeo a su más reciente operación principal de financiación más ocho puntos porcentuales); o (ii) el interés legal del dinero incrementado en dos puntos.</p>
+<p><strong>6.5. Indemnización por costes de cobro.</strong> Cuando el ARRENDATARIO incurra en mora, deberá abonar al ARRENDADOR la cantidad fija de <strong>cuarenta (40) euros</strong> por factura o deuda, que se añadirá en todo caso y sin necesidad de petición expresa a la deuda principal (artículo 8.1 de la Ley 3/2004), más la indemnización de <strong>todos los costes de cobro</strong> debidamente acreditados que superen dicha cantidad, incluidos los de agencia de cobro, asesoría, consultas registrales, gestión de recobro y, en su caso, honorarios de abogado y procurador.</p>
+<p><strong>6.6. Vencimiento anticipado.</strong> El impago de una sola factura en su fecha, el impago de la fianza o su reposición, o el incumplimiento de cualquier otra obligación, producirán el <strong>vencimiento anticipado de todas las deudas</strong> que el ARRENDATARIO tenga contraídas con el ARRENDADOR, incluidas las rentas de los períodos pendientes hasta la finalización pactada, que serán inmediatamente exigibles.</p>
+<p><strong>6.7. Suspensión del suministro y retirada de la maquinaria.</strong> Amparado en la falta de pago, el ARRENDADOR podrá suspender total o parcialmente el mantenimiento, la asistencia técnica y la sustitución de equipos, y <strong>retirar la maquinaria</strong> del lugar en que se encuentre, accediendo a la obra o emplazamiento a tal efecto, sin necesidad de autorización judicial ni de requerimiento previo, sin incurrir en responsabilidad alguna y manteniendo intacto su derecho a las rentas devengadas hasta la puesta a disposición. El ARRENDATARIO concede desde este momento <strong>autorización expresa e irrevocable</strong> al ARRENDADOR para acceder al emplazamiento, retirar la máquina y, en su caso, desmantelarla o trasladarla por sus medios. Los gastos de retirada, transporte, desbloqueo, custodia y guarda serán de cuenta del ARRENDATARIO, sin perjuicio de las indemnizaciones procedentes.</p>
+<p><strong>6.8. Cláusula penal por resolución por impago.</strong> En caso de resolución del contrato por impago o por cualquier incumplimiento del ARRENDATARIO, éste abonará en concepto de indemnización de daños y perjuicios, y no como pena sustitutiva del cumplimiento, una cantidad equivalente al <strong>diez por ciento (10 %) de las rentas pendientes</strong> hasta el vencimiento pactado, con un mínimo de trescientos (300) euros. Esta cantidad es compatible con la penalización por demora en la devolución y con la indemnización de los daños efectivamente causados.</p>
+<p><strong>6.9. Limitación del pago en efectivo.</strong> Los pagos en efectivo se limitarán a los importes y supuestos permitidos por la normativa vigente de prevención del blanqueo de capitales.</p>
+<p><strong>6.10. Acciones de cobro.</strong> Sin perjuicio de lo anterior, el ARRENDADOR podrá instar requerimiento fehaciente de pago, procedimiento monitorio (Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil), procedimiento ejecutivo cuando exista título con fuerza ejecutiva, y solicitar cualquier medida cautelar, incluso antes de la resolución, para asegurar la disponibilidad de la maquinaria y la satisfacción de su crédito, pudiendo también comunicar a la dirección facultativa, a la propiedad de la obra o a la entidad contratante la situación de impago y la titularidad del ARRENDADOR.</p>
+<h2 id="septima-practicas-indebidas-malas-practicas-y-abuso-de-la-maquinaria">SÉPTIMA. PRÁCTICAS INDEBIDAS, MALAS PRÁCTICAS Y ABUSO DE LA MAQUINARIA</h2>
+<p><strong>7.1. Deber general.</strong> El ARRENDATARIO se obliga a usar la maquinaria como un buen padre de familia, destinándola exclusivamente al uso convenido, conforme al manual del fabricante y a sus condiciones y limitaciones técnicas (artículo 1555 del Código Civil). Responderá del deterioro o pérdida de la cosa arrendada, así como de todos los daños y perjuicios derivados de un uso distinto del pactado o de la falta de diligencia, salvo que pruebe que se produjeron sin culpa suya (artículo 1563 del Código Civil).</p>
+<p><strong>7.2. Conductas constitutivas de práctica indebida o abuso.</strong> Se consideran prácticas indebidas, de forma <strong>enunciativa y no limitativa</strong>, las siguientes:</p>
+<p><strong>a) Uso contrario al destino o a las capacidades de la máquina:</strong> emplearla para trabajos distintos de los declarados en el Anexo II; exceder su potencia, capacidad de carga, alcance, profundidad o rendimiento nominal; elevarla o sustentarla de forma no autorizada; usarla como grúa, remolque o tractor sin que sus características lo permitan; transportar personas o mercancías peligrosas sin autorización; empujar o remolcar cargas superiores a las previstas; utilizarla en terrenos, taludes o excavaciones con riesgo de hundimiento o desprendimiento; introducirla en zonas inundables, en zonas con riesgo de derrumbe, o en lugares no autorizados.</p>
+<p><strong>b) Manipulación, desactivación o alteración:</strong> anular o manipular los dispositivos y sistemas de seguridad, alarmas, limitadores, enclavamientos, sensores, testigos de avería o sistemas anticontaminación (EGR, FAP, SCR), así como la centralita o la programación del equipo; retirar o alterar elementos de protección; efectuar soldaduras, taladros, cortes o modificaciones estructurales; instalar accesorios no autorizados; alterar, parar, desconectar o trucar el horómetro, el cuentakilómetros o los sistemas de registro y telemetría; retirar, tapar o alterar los signos identificativos, placas, matrículas, números de serie o distintivos del ARRENDADOR.</p>
+<p><strong>c) Incumplimiento del mantenimiento mínimo y de las condiciones de uso:</strong> no realizar las verificaciones diarias de niveles, engrases, limpieza, presión de neumáticos y estado general; no repostar los consumibles exigidos, en particular el AdBlue, provocando la limitación o inmovilización del motor; emplear combustibles, aceites o fluidos no autorizados o inadecuados; mezclar fluidos; arrancar o mantener el motor en marcha sin las mínimas condiciones de seguridad; circular o trabajar con testigos de avería o alarma encendidos; trabajar con neumáticos, cadenas, cuchillas o elementos de contacto en estado deficiente; no reparar los pinchazos o cortes; continuar la marcha o el trabajo tras detectar una anomalía, agravando la avería; usar la máquina en condiciones de cilindrada, temperatura o exigencia extremas no declaradas.</p>
+<p><strong>d) Uso de la máquina por personas no habilitadas:</strong> permitir su manejo a personas sin la formación, autorización escrita, permiso o habilitación exigibles; a menores de edad; a personas bajo los efectos del alcohol, drogas o medicamentos incompatibles; a personas ajenas al ARRENDATARIO; o a terceros sin su autorización expresa y por escrito.</p>
+<p><strong>e) Cesión, subarriendo y traslado:</strong> ceder, subarrendar, prestar, alquilar a terceros, transferir o compartir el uso de la maquinaria; trasladarla fuera de la obra o zona pactada en el Anexo II sin autorización previa y escrita del ARRENDADOR; destinarla a otra obra, provincia o país.</p>
+<p><strong>f) Incumplimiento de las obligaciones legales:</strong> usar la máquina sin la preceptiva cobertura de responsabilidad civil; no identificar al conductor ante las denuncias de tráfico; incumplir las normas de prevención de riesgos laborales, de seguridad vial, de dominio público, de medio ambiente, de residuos o de emisiones; no disponer de la documentación exigible; utilizar la máquina con trabajadores sin alta, sin formación o sin equipos de protección.</p>
+<p><strong>g) Impago y obstrucción:</strong> no abonar el precio, la fianza o cualquier otra cantidad en el plazo pactado; obstaculizar, impedir o dificultar el acceso del ARRENDADOR al emplazamiento para inspección, mantenimiento o retirada; ocultar la máquina o su emplazamiento; impedir la lectura del horómetro; no devolverla a su vencimiento.</p>
+<p><strong>h) Falta de comunicación, ocultación y falsedad:</strong> no comunicar de forma inmediata las averías, accidentes, siniestros, robos, hurtos, denuncias, embargos o precintos; no aportar la documentación requerida en plazo; facilitar datos o documentos falsos o inexactos, incluida la falsificación o manipulación de partes de trabajo, actas, partes de horas o documentos de mantenimiento; simular siniestros.</p>
+<p><strong>7.3. Consecuencias de las prácticas indebidas.</strong> Sin perjuicio de las demás consecuencias previstas en este contrato y de las responsabilidades civiles, administrativas y penales que procedan, la realización de cualquiera de las conductas anteriores facultará al ARRENDADOR para exigir al ARRENDATARIO, de forma acumulativa:</p>
+<ul>
+<li><strong>a)</strong> El <strong>abono íntegro del coste de reparación</strong> de la maquinaria, con un <strong>recargo del quince por ciento (15 %)</strong> sobre dicho coste en concepto de compensación por la inmovilización, el desgaste acelerado y la pérdida de valor, calculado según las tarifas del fabricante, del servicio técnico oficial o del ARRENDADOR.</li>
+<li><strong>b)</strong> La <strong>indemnización de la depreciación</strong> del valor de reposición del equipo causada por el uso abusivo, acreditada por peritación, informe técnico o tasación.</li>
+<li><strong>c)</strong> La <strong>pérdida, total o parcial, de la fianza</strong> o garantía constituida, que se aplicará a las cantidades adeudadas.</li>
+<li><strong>d)</strong> La <strong>resolución del contrato</strong> con los efectos de la estipulación DECIMOSÉPTIMA, incluida la indemnización por resolución anticipada.</li>
+<li><strong>e)</strong> La facturación del <strong>tiempo de inmovilización</strong> de la máquina a la tarifa pactada, desde que se produjo el hecho hasta la reparación o devolución, cuando la inmovilización sea imputable al ARRENDATARIO.</li>
+<li><strong>f)</strong> La <strong>indemnización de todos los daños y perjuicios</strong> causados, comprendidos el daño emergente, el lucro cesante del ARRENDADOR por la indisponibilidad del equipo y los gastos de sustitución, retirada, grúa, custodia y asesoramiento.</li>
+<li><strong>g)</strong> La <strong>reserva y el ejercicio de las acciones penales</strong> que procedan si la conducta pudiera ser constitutiva de delito o falta (entre otros, hurto, robo, daños, falsedad documental, estafa, apropiación indebida o delitos contra la seguridad vial), con la puesta en conocimiento del Ministerio Fiscal si procediera.</li>
+</ul>
+<p><strong>7.4. Sobreexigencia y exceso de uso.</strong> El uso de la máquina por encima de su capacidad nominal o fuera de las condiciones declaradas autoriza al ARRENDADOR a facturar el exceso de prestación conforme a la tarifa del Anexo II incrementada en un <strong>veinticinco por ciento (25 %)</strong>, además de los daños causados. El uso fuera de la jornada pactada sin comunicación previa se facturará con el mismo recargo sobre las horas excedidas.</p>
+<p><strong>7.5. Presunción por manipulación de los sistemas de medición.</strong> La alteración, apagado, interrupción o modificación del horómetro o de los sistemas de registro, así como la imposibilidad de su lectura por causa imputable al ARRENDATARIO, se presumirá, salvo prueba en contrario, como uso de <strong>diez (10) horas diarias</strong> de trabajo, sin perjuicio de las consecuencias del apartado 7.3.</p>
+<p><strong>7.6. Comunicación de incidentes.</strong> El ARRENDATARIO comunicará al ARRENDADOR, de inmediato y por escrito, toda avería, anomalía, accidente, siniestro, robo, hurto, denuncia, sanción, embargo, precinto o incidencia que afecte a la maquinaria. La ocultación o el retraso en la comunicación agravará su responsabilidad y hará suyas las consecuencias derivadas del agravamiento del daño.</p>
+<p><strong>7.7. Personas por las que responde el ARRENDATARIO.</strong> El ARRENDATARIO responde de las conductas y omisiones de sus empleados, administradores, colaboradores, subcontratistas, transportistas y de cualquier persona que utilice o tenga acceso a la maquinaria por su cuenta o con su consentimiento (artículos 1902 y 1903 del Código Civil).</p>
+<h2 id="octava-obligaciones-del-arrendador">OCTAVA. OBLIGACIONES DEL ARRENDADOR</h2>
+<p><strong>8.1.</strong> Entregar la maquinaria en condiciones de trabajo, con la documentación técnica y legal exigible, en la fecha y lugar pactados, atendiendo el retraso imputable a él con la reducción proporcional del precio cuando así proceda.</p>
+<p><strong>8.2.</strong> Realizar a su costa las reparaciones necesarias para mantener la máquina en estado de servir al uso convenido, así como el mantenimiento preventivo programado por el fabricante y la sustitución de las piezas de desgaste por uso normal, siempre que el ARRENDATARIO haya cumplido sus obligaciones de mantenimiento diario y comunicación.</p>
+<p><strong>8.3.</strong> Prestar la asistencia técnica en obra y atender los avisos de avería en los plazos del apartado 10.2, así como facilitar la documentación del equipo para la elaboración del plan de seguridad y salud y del estudio de seguridad de la obra cuando le sea requerida.</p>
+<p><strong>8.4.</strong> Asumir, respecto de las máquinas y vehículos matriculados, la condición de titular y contratar el seguro obligatorio de circulación y las inspecciones técnicas (ITV) que legalmente correspondan al titular, sin perjuicio de la repercusión de los gastos y de las multas según la estipulación DUODÉCIMA.</p>
+<p><strong>8.5.</strong> Mantener al ARRENDATARIO en el goce pacífico de la cosa arrendada durante la vigencia del contrato (artículo 1554 del Código Civil).</p>
+<p><strong>8.6.</strong> El ARRENDADOR no responde de las paradas, inmovilizaciones, retrasos o rendimientos insuficientes derivados de causas ajenas a él, ni del lucro cesante, de las pérdidas de producción, de los daños indirectos o consecuenciales, ni de los daños causados por el manejo, la conducción o el uso de la máquina por el ARRENDATARIO o sus dependientes, sin perjuicio de las responsabilidades que legalmente le correspondan por dolo o negligencia grave.</p>
+<h2 id="novena-obligaciones-del-arrendatario">NOVENA. OBLIGACIONES DEL ARRENDATARIO</h2>
+<p><strong>9.1.</strong> Recibir la maquinaria, firmar el acta de entrega y utilizarla conforme a su destino, a las instrucciones del fabricante y a lo pactado, con la diligencia propia de un buen padre de familia.</p>
+<p><strong>9.2.</strong> Designar por escrito a las personas autorizadas para su uso, acreditando su formación, habilitación y estado de salud, y no permitir su uso por personas distintas.</p>
+<p><strong>9.3.</strong> Realizar diariamente, por personal cualificado y bajo su entera responsabilidad, las operaciones de mantenimiento y verificación a su cargo: niveles de aceite, agua y fluidos, engrase, presión y estado de neumáticos, cadenas y elementos de contacto, limpieza y engrase general, y recarga de baterías.</p>
+<p><strong>9.4.</strong> Suministrar el combustible, los lubricantes, el AdBlue y los consumibles necesarios, en la calidad y cantidad exigidas por el fabricante, quedando prohibido el uso de carburantes bonificados o no autorizados.</p>
+<p><strong>9.5.</strong> Custodiar la maquinaria, adoptando las medidas de vigilancia y protección adecuadas (recinto cerrado y vigilado, cadenas, bloqueos, inmovilizadores, candados, retirada de llaves y documentos), y no situarla en zonas de riesgo.</p>
+<p><strong>9.6.</strong> Comunicar de inmediato las averías, accidentes y siniestros, paralizar el uso de la máquina cuando exista riesgo para la seguridad o la salud, y no repararla ni manipularla sin autorización escrita del ARRENDADOR.</p>
+<p><strong>9.7.</strong> Permitir al ARRENDADOR y a las personas por él autorizadas el acceso al emplazamiento de la máquina, en cualquier momento, para su inspección, control, mantenimiento, lectura del horómetro, retirada o sustitución, obligándose a obtener las autorizaciones que, en su caso, fueran precisas para dicho acceso.</p>
+<p><strong>9.8.</strong> Cumplir y hacer cumplir toda la normativa aplicable al uso de la maquinaria, en particular la de prevención de riesgos laborales, seguridad vial, dominio público, medio ambiente, residuos, emisiones y seguridad de los equipos de trabajo, así como la coordinación de actividades empresariales en la obra.</p>
+<p><strong>9.9.</strong> Devolver la maquinaria, sus accesorios y su documentación, en el plazo, lugar y condiciones pactados, previa cita con el ARRENDADOR.</p>
+<p><strong>9.10.</strong> Abonar puntualmente el precio, la fianza y cuantas cantidades se devenguen por el arrendamiento y por los conceptos previstos en este contrato.</p>
+<h2 id="decima-averias-reparaciones-y-asistencia-tecnica">DÉCIMA. AVERÍAS, REPARACIONES Y ASISTENCIA TÉCNICA</h2>
+<p><strong>10.1.</strong> Toda avería o funcionamiento anómalo deberá ser comunicado por el ARRENDATARIO al ARRENDADOR <strong>de inmediato</strong> (por teléfono o correo electrónico) y ratificado por escrito dentro de las <strong>veinticuatro (24) horas</strong> siguientes. La parada por avería se computará únicamente desde la recepción de dicha comunicación, no admitiéndose reclamaciones por periodos anteriores.</p>
+<p><strong>10.2.</strong> Recibido el aviso, el ARRENDADOR procederá, cuando sea posible, a la reparación del equipo en el plazo de <strong>dos (2) días hábiles</strong> siguientes, o a su sustitución por otro de iguales o superiores características, sin cargo adicional cuando la avería sea consecuencia del uso normal. La máquina averiada será puesta a disposición del ARRENDADOR, a su requerimiento, para su reparación.</p>
+<p><strong>10.3.</strong> Si la avería fuera imputable al ARRENDATARIO por mal uso, negligencia, falta de mantenimiento, falta de consumibles o cualquier otra causa a él imputable, el coste íntegro de la reparación, los recambios, el desplazamiento y la grúa serán de su cuenta, facturándose conforme al apartado 7.3, y <strong>el arrendamiento seguirá devengando su precio</strong> durante la reparación.</p>
+<p><strong>10.4.</strong> Si la avería no imputable al ARRENDATARIO se prolongara más allá de <strong>siete (7) días naturales</strong> o del <strong>diez por ciento (10 %) de la duración pactada</strong>, el ARRENDATARIO podrá resolver el contrato, abonando únicamente las rentas devengadas hasta la inmovilización efectiva de la máquina y sin indemnización alguna, salvo lo previsto en la ley.</p>
+<p><strong>10.5.</strong> Las partes renuncian a reclamarse indemnizaciones por lucro cesante, pérdida de explotación o daños indirectos derivados de averías, paradas o retrasos, sin perjuicio de los derechos que la ley reconozca imperativamente a cada parte.</p>
+<p><strong>10.6.</strong> El ARRENDATARIO no podrá encargar reparaciones a terceros ni realizar intervenciones sobre la máquina sin autorización previa y escrita del ARRENDADOR. De hacerlo, perderá el derecho a la imputación de la avería al ARRENDADOR y responderá de sus consecuencias.</p>
+<h2 id="undecima-responsabilidad-por-danos-perdida-robo-y-hurto">UNDÉCIMA. RESPONSABILIDAD POR DAÑOS, PÉRDIDA, ROBO Y HURTO</h2>
+<p><strong>11.1.</strong> Durante la vigencia del contrato, el ARRENDATARIO es responsable de la conservación de la maquinaria y del <strong>deterioro o pérdida</strong> que experimente, salvo que pruebe que se produjo sin culpa suya (artículo 1563 del Código Civil), así como de cualquier reclamación que reciba el ARRENDADOR por el uso y empleo del equipo.</p>
+<p><strong>11.2. Siniestro total o pérdida.</strong> En caso de destrucción total, pérdida, hurto o robo de la maquinaria, el ARRENDATARIO abonará al ARRENDADOR el valor de reposición del equipo a la fecha del siniestro, deduciendo un porcentaje por desgaste del <strong>diez por ciento (10 %) anual</strong> desde la fecha de adquisición, con una deducción máxima del <strong>cuarenta por ciento (40 %)</strong>. En ningún caso el importe será inferior a <strong>quinientos (500) euros</strong>, IVA excluido. El contrato se entenderá finalizado el día del siniestro, una vez recibida la comunicación y la documentación del apartado 11.4.</p>
+<p><strong>11.3. Robo o hurto.</strong> Además de ser responsable y custodio de la máquina, el ARRENDATARIO se obliga a: (i) tomar las medidas elementales de protección (cadenas, candados, tacos de bloqueo, inmovilizadores, sistemas antirrobo); (ii) estacionar o situar el equipo en recinto cerrado y vigilado cuando quede fuera de servicio; (iii) no dejar llaves ni documentación en el interior o junto a la máquina; y (iv) cerrar la máquina con llave. La ausencia de estas medidas se tendrá en cuenta para determinar su responsabilidad.</p>
+<p><strong>11.4. Procedimiento en caso de daños, robo o hurto.</strong> El ARRENDATARIO deberá: (i) adoptar de inmediato todas las medidas necesarias para proteger los intereses del ARRENDADOR; (ii) comunicarlo telefónicamente de inmediato y ratificarlo por escrito con acuse de recibo en las veinticuatro (24) horas siguientes; (iii) presentar la correspondiente denuncia ante la autoridad competente y remitir su original; (iv) remitir al ARRENDADOR, en los dos (2) días siguientes, los originales de la denuncia, atestado o informe emitidos por las autoridades; y (v) colaborar en la tramitación del siniestro ante la aseguradora.</p>
+<p><strong>11.5. Elementos de contacto.</strong> Los pinchazos, cortes y daños en neumáticos, cadenas, cuchillas, dientes, gomas y elementos de contacto con el suelo serán por cuenta del ARRENDATARIO, salvo que deriven del uso normal o de un vicio del material. El ARRENDADOR no está obligado a entregar ruedas de repuesto.</p>
+<p><strong>11.6. Valoración.</strong> A falta de acuerdo, el importe de los daños, de la reparación o del valor de reposición se determinará por un perito independiente designado de mutuo acuerdo por las partes o, en su defecto, por el que designe el Colegio o Asociación profesional correspondiente, cuyos honorarios abonará inicialmente la parte solicitante y, definitivamente, la parte cuya responsabilidad resulte acreditada.## DUODÉCIMA. SEGUROS Y RESPONSABILIDAD CIVIL FRENTE A TERCEROS</p>
+<p><strong>12.1. Seguro de responsabilidad civil del ARRENDATARIO (obligatorio).</strong> Al estar la máquina bajo el manejo exclusivo de personal del ARRENDATARIO, éste se obliga a contratar y mantener en vigor, durante toda la vigencia del contrato, una <strong>póliza de responsabilidad civil de explotación</strong> que cubra los daños materiales y personales causados a terceros por el uso de la maquinaria arrendada, con una cobertura mínima de <strong><strong><em>_</em></strong><strong><em>_</em></strong> euros</strong>, así como, en su caso, la responsabilidad civil patronal y la de sus subcontratistas. El ARRENDATARIO entregará copia de la póliza y del recibo de prima en vigor antes de la entrega de la máquina y en cada renovación, manteniendo <strong>indemne</strong> al ARRENDADOR de cuantas reclamaciones pudieran dirigirse contra él.</p>
+<p><strong>12.2. Daños propios de la máquina.</strong> [ ] El ARRENDADOR contrata un seguro de daños propios del equipo (incendio, robo, fenómenos naturales y vuelco), con las inclusiones y exclusiones de la póliza vigente, cuya prima se repercutirá al ARRENDATARIO según el Anexo II. [ ] El ARRENDADOR no contrata seguro de daños propios, siendo el ARRENDATARIO responsable de los daños conforme a la estipulación UNDÉCIMA. En ambos casos, la eventual indemnización de la aseguradora no exime al ARRENDATARIO de su responsabilidad por el siniestro, y, cuando proceda, el ARRENDATARIO asumirá la franquicia o el porcentaje de siniestro que se fije en el Anexo II (<strong><em>_</em></strong><strong><em> % del importe del siniestro, con un mínimo de </em></strong><strong><em>_</em></strong> euros).</p>
+<p><strong>12.3. Máquinas y vehículos matriculados.</strong> Respecto de los equipos automotrices matriculados, el ARRENDADOR, en su condición de titular, mantiene el <strong>seguro obligatorio de responsabilidad civil de circulación</strong> exigido por el texto refundido de la Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor (Real Decreto Legislativo 8/2004, de 29 de octubre) y su reglamento. El ARRENDADOR entrega al ARRENDATARIO copia del permiso de circulación, de la ficha técnica y del certificado de seguro en vigor, y el presente contrato sirve de autorización de custodia y uso por el arrendatario.</p>
+<p><strong>12.4. Infracciones y sanciones de tráfico.</strong> Al ser el ARRENDATARIO quien utiliza y controla el vehículo, será el <strong>único responsable</strong> de las infracciones de las normas de circulación, seguridad vial y transporte, de las sanciones y multas que se impongan, de los recargos, de los gastos de defensa y de las consecuencias económicas de la inmovilización, retención, precinto, retirada, depósito o grúa, así como de su coste y del precio del arrendamiento durante el tiempo en que la máquina permanezca inmovilizada por estas causas. El ARRENDATARIO se obliga a identificar al conductor y a comunicar al ARRENDADOR, en el plazo de <strong>diez (10) días naturales</strong>, los datos del conductor requeridos por la Administración, conforme a la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre), asumiendo la sanción por falta de identificación si no lo hiciera.</p>
+<p><strong>12.5. Accidentes.</strong> El ARRENDATARIO comunicará al ARRENDADOR, de inmediato y en todo caso dentro de las <strong>cuarenta y ocho (48) horas</strong> siguientes, cualquier accidente o siniestro en el que se vea involucrada la máquina, con o sin daños a personas o bienes, con el fin de que el ARRENDADOR pueda formular la declaración ante la aseguradora en plazo. Será responsable de las consecuencias del retraso o de la falta de comunicación.</p>
+<p><strong>12.6. Exclusiones.</strong> El ARRENDATARIO responde igualmente de los daños no cubiertos por las pólizas, entre ellos los causados por imprudencia, negligencia, impericia, mala fe o falta de cualificación del operador, los derivados del uso distinto del convenido, y los producidos por hurto, pérdida o extravío de la máquina o de alguna de sus piezas. Los daños a bienes del ARRENDATARIO, sus socios, empleados o familiares hasta el tercer grado quedan excluidos de la cobertura del seguro de circulación del titular.</p>
+<p><strong>12.7. Obligación de información.</strong> El ARRENDATARIO informará al ARRENDADOR de todo siniestro, reclamación extrajudicial o demanda recibidos y le remitirá copia de la documentación en el plazo de cuarenta y ocho (48) horas, absteniéndose de reconocer responsabilidades o pactar acuerdos con terceros sin su consentimiento escrito.</p>
+<h2 id="decimotercera-cumplimiento-normativo-prevencion-de-riesgos-laborales-y-coordinacion-de-actividades">DECIMOTERCERA. CUMPLIMIENTO NORMATIVO, PREVENCIÓN DE RIESGOS LABORALES Y COORDINACIÓN DE ACTIVIDADES</h2>
+<p><strong>13.1.</strong> El ARRENDATARIO se obliga a cumplir y hacer cumplir la normativa vigente aplicable al uso de la maquinaria, en especial la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales; el Real Decreto 1215/1997, de 18 de julio, sobre utilización por los trabajadores de los equipos de trabajo; el Real Decreto 171/2004, de 30 de enero, de coordinación de actividades empresariales; el Real Decreto 1627/1997, de 24 de octubre, sobre disposiciones mínimas de seguridad y salud en las obras de construcción; el Real Decreto 1644/2008, de 10 de octubre, sobre comercialización y puesta en servicio de las máquinas; el Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos; el Real Decreto Legislativo 6/2015, de 30 de octubre, en materia de tráfico y seguridad vial; la Ley 7/2022, de 8 de abril, de residuos y suelos contaminados; y la Ley 38/1992, de 28 de diciembre, de Impuestos Especiales.</p>
+<p><strong>13.2.</strong> El ARRENDATARIO es el empresario titular del centro de trabajo y el responsable de la coordinación de actividades empresariales en el emplazamiento de la obra, debiendo informar al ARRENDADOR de los riesgos y medidas preventivas cuando éste deba acceder al emplazamiento, y designar un interlocutor en materia de seguridad.</p>
+<p><strong>13.3.</strong> El ARRENDATARIO se compromete a que la máquina cuente, antes de su puesta en servicio, con el <strong>marcado CE</strong> y la declaración de conformidad exigibles, con el manual de instrucciones en castellano, con las revisiones periódicas legalmente exigibles y las recomendadas por el fabricante, así como con los registros documentales correspondientes, y a que no se utilice la máquina para fines o en condiciones para los que no está concebida.</p>
+<p><strong>13.4.</strong> Conforme al Real Decreto 1215/1997, el ARRENDATARIO deberá: (i) designar y autorizar por escrito a los trabajadores que usen cada equipo; (ii) asegurarse de que disponen de la formación específica y de la información precisa; (iii) verificar el correcto funcionamiento y el estado de los dispositivos de seguridad; (iv) no permitir el uso a trabajadores sin la formación o autorización requeridas, y (v) adoptar las medidas necesarias para evitar el uso de la máquina en condiciones de riesgo o por personas no designadas.</p>
+<p><strong>13.5.</strong> El ARRENDATARIO deberá acreditar, cuando el ARRENDADOR lo requiera, el alta de sus trabajadores en la Seguridad Social, la formación preventiva recibida y las habilitaciones profesionales que resulten exigibles, y declara estar al corriente de sus obligaciones laborales y de seguridad social, así como de sus obligaciones fiscales y de subcontratación (Ley 32/2006, de 18 de octubre, reguladora de la subcontratación en el sector de la construcción, cuando resulte aplicable).</p>
+<p><strong>13.6.</strong> El ARRENDADOR entregará al ARRENDATARIO, a su requerimiento y con la antelación necesaria, la documentación técnica de la máquina precisa para la elaboración del estudio o plan de seguridad y salud de la obra.</p>
+<h2 id="decimocuarta-cesion-subarriendo-traslado-y-titularidad">DECIMOCUARTA. CESIÓN, SUBARRIENDO, TRASLADO Y TITULARIDAD</h2>
+<p><strong>14.1.</strong> Queda expresamente prohibida la cesión total o parcial del contrato, así como el subarriendo, préstamo, traspaso o cualquier otra forma de puesta a disposición de la maquinaria a terceros, así como la subrogación de tercero en los derechos u obligaciones del ARRENDATARIO, salvo autorización previa y escrita del ARRENDADOR.</p>
+<p><strong>14.2.</strong> La maquinaria arrendada no podrá ser trasladada del emplazamiento indicado en el Anexo II sin autorización previa y escrita del ARRENDADOR.</p>
+<p><strong>14.3.</strong> El ARRENDADOR se reserva la plena titularidad dominical de la maquinaria durante toda la vigencia del arrendamiento. El ARRENDATARIO no podrá venderla, enajenarla, hipotecarla, pignorarla, aportarla a sociedades, ni gravarla de cualquier otra forma, con o sin desplazamiento posesorio.</p>
+<p><strong>14.4.</strong> El ARRENDATARIO se obliga a exhibir el presente contrato y a comunicar la titularidad del ARRENDADOR ante cualquier autoridad judicial o administrativa que pretenda trabar, embargar, precintar o retener la maquinaria, así como ante la propiedad del inmueble o finca donde se ubique el equipo, a fin de que no pueda ser considerada prenda o garantía de deudas ajenas. A tal efecto, si el ARRENDATARIO guarda la máquina en un inmueble del que es arrendatario, deberá notificarlo por escrito al propietario del inmueble, indicando que se trata de material arrendado y no de su propiedad. El ARRENDATARIO informará de inmediato al ARRENDADOR de cualquier embargo, traba u oposición de terceros, facilitándole los datos del procedimiento, y se obliga a formular la correspondiente tercería.</p>
+<h2 id="decimoquinta-inspeccion-control-y-custodia">DECIMOQUINTA. INSPECCIÓN, CONTROL Y CUSTODIA</h2>
+<p><strong>15.1.</strong> El ARRENDADOR, o las personas por él autorizadas, podrá acceder libremente, sin previa notificación, y cuantas veces lo estime necesario, al lugar donde se encuentre la maquinaria, para su revisión, control, mantenimiento, lectura del horómetro, sustitución o retirada. El ARRENDATARIO se obliga a facilitar dicho acceso y a obtener las autorizaciones y permisos que, en su caso, resulten precisos.</p>
+<p><strong>15.2.</strong> El ARRENDATARIO deberá comunicar al ARRENDADOR con periodicidad <strong><em>_</em></strong>_____ ([ ] semanal [ ] mensual) las horas efectivamente trabajadas por el equipo, mediante el parte que se acuerda en el Anexo II, y autoriza la lectura y verificación de los sistemas de registro del equipo.</p>
+<p><strong>15.3.</strong> El ARRENDATARIO deberá mantener la maquinaria debidamente señalizada y protegida, con los dispositivos de seguridad activos, no pudiendo trabajar con la máquina en condiciones de riesgo o con los testigos de avería o alarma encendidos.</p>
+<p><strong>15.4.</strong> Cuando la máquina quede fuera de servicio, el ARRENDATARIO la dejará estacionada en lugar seguro, cerrada, inmovilizada y alejada de zonas de riesgo de inundación, hundimiento o desprendimiento.</p>
+<h2 id="decimosexta-fuerza-mayor">DECIMOSEXTA. FUERZA MAYOR</h2>
+<p><strong>16.1.</strong> Ninguna de las partes será responsable del incumplimiento debido a fuerza mayor o caso fortuito ajeno a su control, entendiendo por tales, entre otros, los hechos catastróficos naturales, las inundaciones, incendios, terremotos, las órdenes de la autoridad, las situaciones de conflicto bélico o sanitario, los cierres patronales, las huelgas o los cortes de suministro generalizado.</p>
+<p><strong>16.2.</strong> La parte afectada lo comunicará de inmediato por escrito a la otra, con acreditación del hecho. La fuerza mayor no exime del pago de las rentas devengadas con anterioridad, sin perjuicio de lo previsto para la resolución del contrato por imposibilidad sobrevenida.</p>
+<h2 id="decimoseptima-resolucion-efectos-y-clausula-penal">DECIMOSÉPTIMA. RESOLUCIÓN, EFECTOS Y CLÁUSULA PENAL</h2>
+<p><strong>17.1. Causas de resolución.</strong> El contrato podrá resolverse por las causas generales previstas en la ley (artículos 1124 y 1556 del Código Civil) y, en particular, por acuerdo de las partes; por el vencimiento del plazo sin prórroga; por la decisión del ARRENDATARIO con el preaviso pactado; y por el incumplimiento por el ARRENDATARIO de cualquiera de sus obligaciones, entendiéndose en todo caso incumplimiento esencial:</p>
+<ul>
+<li>a) El impago del precio, de la fianza o de cualquier cantidad debida.</li>
+<li>b) El uso de la maquinaria para fines o de forma distintos de los convenidos, o su uso abusivo o negligente, con o sin daños.</li>
+<li>c) La manipulación, desactivación o alteración de dispositivos, sistemas de seguridad, registros o signos identificativos.</li>
+<li>d) La cesión, el subarriendo, el préstamo o el traslado de la máquina sin autorización escrita.</li>
+<li>e) La falta de mantenimiento, el incumplimiento de las obligaciones de conservación o la falta de contratación del seguro de responsabilidad civil.</li>
+<li>f) La reiteración de averías por uso indebido, la ocultación de averías o siniestros, o la aportación de datos o documentos falsos.</li>
+<li>g) La falta de personal habilitado o el uso de la máquina por persona no autorizada.</li>
+<li>h) El impago del seguro, el embargo, el precinto o la traba de la maquinaria, la situación de concurso, concurso de acreedores, preconcurso, liquidación, insolvencia o suspensión de pagos del ARRENDATARIO, o su disolución.</li>
+<li>i) El incumplimiento grave de las obligaciones de prevención de riesgos laborales o de la normativa sectorial aplicable.</li>
+</ul>
+<p><strong>17.2. Efectos de la resolución.</strong> La resolución por causa imputable al ARRENDATARIO determinará: (i) la exigibilidad inmediata de todas las cantidades devengadas y pendientes, incluidas las rentas de los períodos que resten hasta el vencimiento pactado; (ii) la pérdida o aplicación de la fianza; (iii) la indemnización de daños y perjuicios, con la penalización del apartado 6.8; (iv) la obligación del ARRENDATARIO de devolver la maquinaria en el plazo máximo de <strong>veinticuatro (24) horas</strong> desde el requerimiento; y (v) la facultad del ARRENDADOR de retirar la máquina del lugar en que se encuentre, sin autorización previa, quedando expresamente autorizado y facultado por el ARRENDATARIO desde este momento, sin perjuicio de darle cuenta una vez realizada la retirada. Los gastos de retirada, transporte, grúa, desbloqueo y custodia serán de cuenta del ARRENDATARIO.</p>
+<p><strong>17.3. Cláusula penal por demora en la devolución.</strong> La falta de devolución de la maquinaria en la fecha pactada o en las veinticuatro (24) horas siguientes al requerimiento devengará, además del precio del arrendamiento con el recargo del apartado 4.6, una <strong>penalización de <strong><em>_</em></strong>_____ euros por día natural</strong> de retraso (o, en su defecto, del doble de la tarifa diaria pactada), con un mínimo de <strong><em>_</em></strong>_____ euros.</p>
+<p><strong>17.4. La resolución del contrato está supeditada a la restitución efectiva de la maquinaria al ARRENDADOR.</strong></p>
+<h2 id="decimoctava-confidencialidad-y-proteccion-de-datos">DECIMOCTAVA. CONFIDENCIALIDAD Y PROTECCIÓN DE DATOS</h2>
+<p><strong>18.1.</strong> Las partes mantendrán la confidencialidad sobre la información comercial, técnica, económica y financiera intercambiada con ocasión del presente contrato, y no la utilizarán para fines distintos de su ejecución, salvo obligación legal o requerimiento de autoridad.</p>
+<p><strong>18.2.</strong> Los datos personales de los representantes y personas de contacto de las partes, así como los de las personas designadas para el uso de la maquinaria, serán tratados por cada parte como responsable del tratamiento con la finalidad de gestionar la relación contractual y las obligaciones de facturación, control y seguridad, con base en la ejecución del contrato y el cumplimiento de obligaciones legales, y podrán comunicarse a aseguradoras, bancos, asesores, autoridades y tribunales cuando resulte necesario. Los interesados podrán ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad ante la parte correspondiente, conforme al Reglamento (UE) 2016/679 y a la Ley Orgánica 3/2018, de 5 de diciembre.</p>
+<p><strong>18.3.</strong> El ARRENDATARIO informará a las personas que utilicen la maquinaria de los extremos anteriores en lo que les afecte, y garantiza la legitimidad de la puesta a disposición de sus datos al ARRENDADOR.</p>
+<p><strong>18.4.</strong> El ARRENDADOR podrá consultar los ficheros de morosidad y comunicar los datos del ARRENDATARIO en caso de impago, cuando concurran los requisitos legales para ello, así como ceder el crédito a terceros con notificación al deudor.</p>
+<h2 id="decimonovena-notificaciones">DECIMONOVENA. NOTIFICACIONES</h2>
+<p><strong>19.1.</strong> A efectos de notificaciones, comunicaciones, requerimientos y avisos, las partes designan las siguientes direcciones:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ARRENDADOR</th>
+<th>ARRENDATARIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirección postal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Correo electrónico</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Persona de contacto</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Teléfono</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>19.2.</strong> Las comunicaciones se entenderán válidamente realizadas cuando se envíen por correo electrónico a las direcciones designadas, considerándose recibidas el mismo día del envío si se remiten en día laborable y hora hábil, o el siguiente día laborable en otro caso, salvo prueba en contrario. Los avisos de avería podrán realizarse telefónicamente, con ratificación escrita.</p>
+<p><strong>19.3.</strong> Cualquier cambio de dirección o de correo electrónico deberá comunicarse a la otra parte con cinco (5) días de antelación. En defecto de comunicación, serán válidas las notificaciones realizadas a la dirección anteriormente designada.</p>
+<h2 id="vigesima-integridad-modificacion-y-nulidad-parcial">VIGÉSIMA. INTEGRIDAD, MODIFICACIÓN Y NULIDAD PARCIAL</h2>
+<p><strong>20.1.</strong> El presente contrato, junto con sus anexos, constituye el acuerdo íntegro entre las partes en relación con su objeto y sustituye a cualesquiera pactos anteriores. Las partes aceptan expresamente el contenido de las condiciones generales y particulares, que declaran conocer y comprender, con renuncia a cualquier otro condicionado general que pudiera invocarse.</p>
+<p><strong>20.2.</strong> En caso de contradicción entre el clausulado general y las condiciones particulares del <strong>Anexo II</strong>, prevalecerán estas últimas, salvo que la cláusula general sea de carácter imperativo.</p>
+<p><strong>20.3.</strong> Ninguna modificación del contrato será válida si no consta por escrito y firmada por ambas partes, incorporándose como anexo.</p>
+<p><strong>20.4.</strong> Si alguna cláusula fuera declarada nula, ineficaz o inaplicable, se tendrá por no puesta, manteniéndose el resto del contrato en vigor, y las partes la sustituirán de buena fe por otra que responda a la misma finalidad y sea válida.</p>
+<p><strong>20.5.</strong> El hecho de no exigir en un momento dado el cumplimiento de alguna obligación no implica renuncia a exigirlo en el futuro.</p>
+<h2 id="vigesimoprimera-ley-aplicable-y-jurisdiccion">VIGESIMOPRIMERA. LEY APLICABLE Y JURISDICCIÓN</h2>
+<p><strong>21.1.</strong> El presente contrato se rige por la legislación española, en particular por el Código Civil y la Ley 3/2004, de 29 de diciembre, de medidas de lucha contra la morosidad en las operaciones comerciales.</p>
+<p><strong>21.2.</strong> En todo lo no previsto, se aplicarán las disposiciones específicas sobre arrendamientos y las generales sobre obligaciones y contratos.</p>
+<p><strong>21.3.</strong> Para la resolución de cualquier cuestión, discrepancia o litigio derivado del contrato, las partes, con renuncia expresa a su fuero propio y a cualquier otro que pudiera corresponderles, se someten a la competencia de los <strong>Juzgados y Tribunales de <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</strong> (artículos 54 y 55 de la Ley 1/2000, de Enjuiciamiento Civil).</p>
+<p><strong>21.4.</strong> Con carácter previo y voluntario, las partes procurarán resolver sus controversias mediante negociación directa o mediación.</p>
+<p>Y en prueba de conformidad con cuanto antecede, ambas partes firman el presente contrato por duplicado y a un solo efecto, en el lugar y fecha indicados en el encabezamiento.</p>
+<table>
+<thead>
+<tr>
+<th><strong>EL ARRENDADOR</strong></th>
+<th><strong>EL ARRENDATARIO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fdo.: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</td>
+<td>Fdo.: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</td>
+</tr>
+<tr>
+<td>Nombre:</td>
+<td>Nombre:</td>
+</tr>
+<tr>
+<td>Cargo:</td>
+<td>Cargo:</td>
+</tr>
+<tr>
+<td>DNI/NIE:</td>
+<td>DNI/NIE:</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="anexo-i-relacion-de-maquinaria-y-vehiculos-arrendados">ANEXO I. RELACIÓN DE MAQUINARIA Y VEHÍCULOS ARRENDADOS</h1>
+<table>
+<thead>
+<tr>
+<th>Nº</th>
+<th>Descripción y tipo de máquina</th>
+<th>Marca / Modelo</th>
+<th>Nº serie / Matrícula</th>
+<th>Año</th>
+<th>Horómetro / km inicial</th>
+<th>Accesorios</th>
+<th>Valor de reposición (€)</th>
+<th>Tarifa (€/unidad de tiempo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Observaciones (accesorios, equipamiento, limitaciones del equipo, estado de desgaste, marcado CE, ITV en vigor, seguro):</p>
+<hr />
+<hr />
+<hr />
+<h1 id="anexo-ii-condiciones-particulares">ANEXO II. CONDICIONES PARTICULARES</h1>
+<p><strong>1. Partes</strong></p>
+<ul>
+<li>ARRENDADOR: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ CIF: <strong><em>_</em></strong>___</li>
+<li>ARRENDATARIO: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ CIF: <strong><em>_</em></strong>___</li>
+</ul>
+<p><strong>2. Obra o emplazamiento de uso</strong> (dirección exacta, término municipal, referencia catastral o coordenadas):</p>
+<hr />
+<p><strong>3. Uso autorizado de la maquinaria</strong> (trabajos y condiciones):</p>
+<hr />
+<p><strong>4. Duración</strong></p>
+<ul>
+<li>Fecha de entrega: <strong><em>_/</em></strong>_/<strong><em>_</em></strong>_ Hora: ______</li>
+<li>Fecha de devolución prevista: <strong><em>_/</em></strong>_/<strong><em>_</em></strong>_</li>
+<li>Prórroga: [ ] automática por períodos de ______ [ ] expreso por escrito</li>
+<li>Preaviso de devolución: ______ días naturales</li>
+</ul>
+<p><strong>5. Precio</strong></p>
+<ul>
+<li>Precio por día laborable (8 h): <strong><em>_</em></strong>___ € + IVA</li>
+<li>Precio por semana (5 días / 40 h): <strong><em>_</em></strong>___ € + IVA</li>
+<li>Precio por mes (21 días / 168 h): <strong><em>_</em></strong>___ € + IVA</li>
+<li>Precio por hora adicional: <strong><em>_</em></strong>___ € + IVA</li>
+<li>Duración mínima de facturación: <strong><em>_</em></strong>___</li>
+<li>Revisión de precios: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</li>
+<li>Transporte ida: <strong><em>_</em></strong><strong><em> € + IVA — Transporte vuelta: </em></strong><strong><em>_</em></strong> € + IVA</li>
+<li>Otros conceptos: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</li>
+</ul>
+<p><strong>6. Pago y garantía</strong></p>
+<ul>
+<li>Plazo de pago: ______ días naturales desde la fecha de factura</li>
+<li>Cuenta bancaria del ARRENDADOR (IBAN): <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</li>
+<li>Fianza o garantía: <strong><em>_</em></strong><strong><em> €, en la modalidad de </em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</li>
+<li>Tipo de interés de demora pactado: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</li>
+<li>Periodicidad de facturación: [ ] mensual [ ] al final del arrendamiento [ ] otra: ______</li>
+</ul>
+<p><strong>7. Seguros</strong></p>
+<ul>
+<li>RC de explotación del ARRENDATARIO: entidad <strong><em>_</em></strong><strong><em>_</em>, póliza nº </strong><strong><em>_</em></strong>_, cobertura <strong><em>_</em></strong>___ €</li>
+<li>Seguro de daños propios de la máquina: [ ] contratado por el ARRENDADOR (prima repercutida: ______ % del precio) [ ] no contratado</li>
+<li>Franquicia a cargo del ARRENDATARIO: <strong><em>_</em>_ % del siniestro, mínimo </strong>____ €</li>
+<li>Seguro obligatorio de circulación (equipos matriculados): póliza nº <strong><em>_</em></strong><strong><em>, vencimiento </em></strong>_/<strong><em>_/</em></strong>___</li>
+</ul>
+<p><strong>8. Obligaciones accesorias</strong></p>
+<ul>
+<li>Personas autorizadas por el ARRENDATARIO para el uso de la máquina: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</li>
+<li>Parte de horas: [ ] semanal [ ] mensual [ ] otro: ______</li>
+<li>Gastos de gestión de residuos: <strong><em>_</em>_ % o </strong><strong><em>_</em></strong>_ €</li>
+<li>Régimen de acceso e inspección: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</li>
+</ul>
+<p><strong>9. Observaciones</strong></p>
+<hr />
+<hr />
+<h1 id="anexo-iii-actas-de-entrega-y-de-devolucion">ANEXO III. ACTAS DE ENTREGA Y DE DEVOLUCIÓN</h1>
+<h2 id="a-acta-de-entrega">A) ACTA DE ENTREGA</h2>
+<p>Máquina: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ Máquina (marca/modelo): <strong><em>_</em></strong><strong><em>_</em></strong> Nº serie/matrícula: <strong><em>_</em></strong><strong><em>_</em></strong></p>
+<p>Fecha y hora de entrega: <strong><em>_/</em></strong>_/<strong><em>_</em></strong>_ a las <strong><em>_</em>_ h. Lugar: </strong><strong><em>_</em></strong><strong><em>_</em></strong>______</p>
+<p>Horómetro / cuentakilómetros inicial: <strong><em>_</em></strong><strong><em> Nivel de combustible: </em></strong><strong><em>_</em></strong></p>
+<p>Accesorios entregados: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<p>Documentación entregada: [ ] Ficha técnica/permiso de circulación [ ] ITV en vigor [ ] Seguro obligatorio [ ] Declaración CE / marcado CE [ ] Manual de instrucciones en castellano [ ] Registro de mantenimiento [ ] Otros: <strong><em>_</em></strong><strong><em>_</em></strong></p>
+<p>Estado aparente / observaciones: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<p>Entrega realizada por: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ (ARRENDADOR) — Recibida por: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ (ARRENDATARIO)</p>
+<p>Se hace constar que NO existen reservas ni protestas sobre el estado del equipo, salvo las indicadas expresamente aquí: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>__</p>
+<h2 id="b-acta-de-devolucion">B) ACTA DE DEVOLUCIÓN</h2>
+<p>Máquina: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ Horómetro / cuentakilómetros final: <strong><em>_</em></strong>___</p>
+<p>Fecha y hora de devolución: <strong><em>_/</em></strong>_/<strong><em>_</em></strong>_ a las <strong><em>_</em>_ h. Lugar: </strong><strong><em>_</em></strong><strong><em>_</em></strong>______</p>
+<p>Estado del equipo, limpieza, accesorios y documentación: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<p>Daños, faltas o deterioros apreciados y su valoración provisional: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<p>Horas trabajadas desde la entrega: <strong><em>_</em></strong><strong><em> — Importe pendiente de liquidación: </em></strong><strong><em>_</em></strong> €</p>
+<p>Recibido por el ARRENDADOR: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_ — Entregado por el ARRENDATARIO: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<hr />
+<h1 id="anexo-iv-cuadro-resumen-de-practicas-indebidas-y-consecuencias-economicas">ANEXO IV. CUADRO RESUMEN DE PRÁCTICAS INDEBIDAS Y CONSECUENCIAS ECONÓMICAS</h1>
+<p><em>Cuadro de apoyo al clausulado (estipulación SÉPTIMA). No sustituye a las estipulaciones del contrato; en caso de discrepancia, prevalecen las estipulaciones.</em></p>
+<table>
+<thead>
+<tr>
+<th>Práctica indebida</th>
+<th>Consecuencia principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uso para fines distintos de los declarados</td>
+<td>Resolución del contrato; devolución inmediata; indemnización de daños</td>
+</tr>
+<tr>
+<td>Exceso de potencia, capacidad o condiciones de uso</td>
+<td>Facturación del exceso con recargo del 25 % + daños</td>
+</tr>
+<tr>
+<td>Manipulación de dispositivos de seguridad, limitadores o anticontaminación</td>
+<td>Coste íntegro de reparación + recargo del 15 %; resolución; posible delito</td>
+</tr>
+<tr>
+<td>Manipulación o imposibilidad de lectura del horómetro</td>
+<td>Presunción de 10 h diarias de uso + consecuencias anteriores</td>
+</tr>
+<tr>
+<td>Falta de mantenimiento diario o de consumibles (AdBlue, aceites)</td>
+<td>Averías a cargo del ARRENDATARIO; reparación + recargo del 15 %</td>
+</tr>
+<tr>
+<td>Uso por personal no habilitado o sin autorización</td>
+<td>Resolución; responsabilidad plena por daños a personas y bienes</td>
+</tr>
+<tr>
+<td>Uso de carburantes bonificados o no autorizados</td>
+<td>Sanciones, recargos y regularización a cargo del ARRENDATARIO; resolución</td>
+</tr>
+<tr>
+<td>Cesión, subarriendo o traslado sin autorización escrita</td>
+<td>Resolución inmediata; penalización; retirada de la máquina</td>
+</tr>
+<tr>
+<td>Ocultación de averías, accidentes o siniestros</td>
+<td>Responsabilidad por el agravamiento del daño y pérdida de coberturas</td>
+</tr>
+<tr>
+<td>Falta de contratación o de vigencia del seguro de RC</td>
+<td>Resolución; responsabilidad íntegra frente a terceros</td>
+</tr>
+<tr>
+<td>Impago de facturas o de la fianza</td>
+<td>Mora automática; intereses de demora (BCE + 8 puntos); 40 € por factura; vencimiento anticipado; retirada de la máquina; penalización del 10 % de las rentas pendientes (mín. 300 €)</td>
+</tr>
+<tr>
+<td>No devolución a su vencimiento</td>
+<td>Precio + recargo del 25 % + penalización diaria + acciones legales</td>
+</tr>
+<tr>
+<td>Embargo, precinto o traba de la máquina</td>
+<td>Recuperación inmediata; tercería; resolución; indemnización</td>
+</tr>
+<tr>
+<td>Daño, pérdida, robo o hurto</td>
+<td>Valor de reposición con deducción del 10 % anual (máx. 40 %), mínimo 500 €</td>
+</tr>
+<tr>
+<td>Concurso o insolvencia del ARRENDATARIO</td>
+<td>Vencimiento anticipado; retirada inmediata; liquidación total</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Modelo estándar de contrato de arrendamiento de maquinaria y vehículos de obra pública sin operador y sin combustible. Documento orientativo de uso profesional: se recomienda su revisión por un asesor jurídico y la adaptación de las condiciones particulares al caso concreto.</em></p>
+  </article>
+  <p class="aviso"><strong>Aviso:</strong> este documento es un modelo estándar de uso profesional para el arrendamiento de maquinaria y vehículos de obra pública sin operador y sin combustible. Se recomienda su revisión por un asesor jurídico y la cumplimentación de las condiciones particulares (Anexo II) antes de su firma.</p>
+  <footer class="pie">
+    Modelo estándar de contrato de arrendamiento de maquinaria de obra pública &middot; sin operador y sin combustible<br>
+    Documento generado para su publicación en web &middot; versión octubre de 2026
+  </footer>
+</div>
+</body>
+</html>
