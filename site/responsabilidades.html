@@ -93,8 +93,12 @@ footer.pie a{color:var(--acento)}
   padding:20px 24px;margin:20px 0 0;
 }
 .indice h2{margin:0 0 10px;font-size:15px;color:#12314f;border:none;padding:0}
-.indice ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
-@media (max-width:760px){.indice ol{columns:1}}
+.indice ul{margin:0;padding:0;list-style:none;columns:2;column-gap:32px}
+.indice li{margin:0 0 7px;padding-left:14px;position:relative;break-inside:avoid}
+.indice li:before{content:"\2013";position:absolute;left:0;color:var(--acento2)}
+.indice a{color:#25455f;text-decoration:none}
+.indice a:hover{color:var(--acento);text-decoration:underline}
+@media (max-width:760px){.indice ul{columns:1}}
 @media (max-width:720px){
   .doc{padding:26px 20px}
   h1.titulo{font-size:23px}
